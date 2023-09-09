@@ -18,4 +18,4 @@ function today() {
 }
 
 today()
-setInterval(today, 1000);
+setInterval(today, 1);
