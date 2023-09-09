@@ -3,16 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My profile</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
-<style>
-
-</style>
 <body>
-    
-    <script>
-        
-    </script>
+    <div class="container">
+        <div class="profile-name">
+            <div data-testid="slackDisplayImage" class="slackDisplayImage"><img class="my-image" src="./me.jpg" alt="me"></div>
+            <p data-testid="slackUserName" class="slackUserName">AbdulrahmanLuqman</p>
+            <p data-testid="myTrack" class="myTrack">Frontend</p>
+        </div>
+
+        <div class="day-and-utct">
+            <div class="current-day">
+                <p>Current Day:</p>
+                <p class="currentDayOfTheWeek" data-testid="currentDayOfTheWeek"></p>
+            </div>
+
+            <div class="current-utct">
+                <p>Current UTCT:</p>
+                <p class="currentUTCTime" data-testid="currentUTCTime"></p>
+            </div>
+        </div>
+
+        <div class="github-url">
+            <p>Github Url:</p>
+            <a href="">Lorem ipsum dolor sit amet, consectetur</a>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>

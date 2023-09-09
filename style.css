@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+.container{
+    width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    height: 100vh;
+    border-radius: 10px;
+    padding: 20px 60px;
+    box-shadow: 2px 2px 5px 5px rgb(219, 217, 217), -2px -2px 5px 5px rgb(219, 217, 217);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.profile-name{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+.slackDisplayImage{
+    border: 5px solid rgb(228, 225, 225);
+    border-radius: 50%;
+    overflow: hidden;
+}
+.my-image{
+    width: 150px;
+    height: 150px;
+    transition: all 1s ease-in-out;
+}
+.slackDisplayImage:hover .my-image{
+    transform: scale(1.3);
+    transition: transform 1s ease-in-out;
+}
+.slackUserName{
+    font-weight: 700;
+    font-size: 18px;
+}
+.myTrack{
+    font-size: 17px;
+    font-weight: 700;
+}
+.day-and-utct{
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 2px 2px 5px 5px rgb(219, 217, 217) inset, -2px -2px 5px 5px rgb(219, 217, 217) inset;
+}
+.current-day, .current-utct{
+    font-weight: 600;
+    font-size: 18px;
+    display: flex;
+    gap: 5px;
+}
+.github-url{
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    /* gap: 20px; */
+    justify-content: space-between;
+    box-shadow: 2px 2px 5px 5px rgb(219, 217, 217) inset, -2px -2px 5px 5px rgb(219, 217, 217) inset;
+}
+@media (max-width:768px) {
+    .container{
+        height: fit-content;
+        gap: 30px;
+        padding-bottom: 50px;
+    }
+}
+@media (max-width:626px) {
+    .container{
+        width: 90%;
+    }
+}
+@media (max-width:586px) {
+    .container{
+        padding: 20px 30px;
+    }
+}
+@media (max-width:528px) {
+    .container{
+        padding: 20px 10px;
+    }
+    .github-url p, .github-url a{
+        font-size: 14px;
+    }
+    .current-day, .current-utct{
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .my-image{
+        width: 100px;
+        height: 100px;
+    }
+}
