@@ -68,9 +68,12 @@ body{
     padding: 20px;
     border-radius: 10px;
     display: flex;
-    /* gap: 20px; */
-    justify-content: space-between;
+    gap: 5px;
     box-shadow: 2px 2px 5px 5px rgb(219, 217, 217) inset, -2px -2px 5px 5px rgb(219, 217, 217) inset;
+}
+.link{
+    display: flex;
+    gap: 4px;
 }
 @media (max-width:768px) {
     .container{
