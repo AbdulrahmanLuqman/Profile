@@ -108,3 +108,8 @@ body{
         height: 100px;
     }
 }
+@media (max-width:300px) {
+    .current-utct, .current-day{
+        font-size: 12px;
+    }
+}
